@@ -15,12 +15,12 @@ return (
             }}
           >
             <img src={process.env.PUBLIC_URL + "/Main logo.png"} alt="logo"/>
-            <li>Home</li>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Reservation</li>
-            <li>Order Online</li>
-            <li>Login</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/menu">Menu</a></li>
+            <li><a href="/reservation">Reservation</a></li>
+            <li><a href="/order-online">Order Online</a></li>
+            <li><a href="/login">Login</a></li>
         </ul>
     </nav>
 );
