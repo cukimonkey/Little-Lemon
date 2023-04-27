@@ -3,13 +3,18 @@ import React from "react";
 
 function Nav(){
 return (
-    <nav>
-        <ul
-          px={16}
-          py={4}
-          justifyContent="space-between"
-          alignItems="center">
-            <img src={process.env.PUBLIC_URL + "/Main logo.png"}/>
+    <nav className="navbar">
+        <ul className="navelement"
+            style={{
+                listStyleType: "none",
+                padding: 0,
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                width: "100%"
+            }}
+          >
+            <img src={process.env.PUBLIC_URL + "/Main logo.png"} alt="logo"/>
             <li>Home</li>
             <li>About</li>
             <li>Menu</li>
