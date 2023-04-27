@@ -13,3 +13,9 @@
 .navelement img {
   height: 40px;
 }
+
+.footerelement ul.footerlist {
+  list-style-type: none;
+  padding: 0;
+}
+
