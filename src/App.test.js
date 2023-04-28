@@ -4,7 +4,7 @@ import App from './App';
 test('renders learn react link', async () => {
   render(<App />);
   await waitFor(() => {
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByText(/restaurant/i);
   expect(linkElement).toBeInTheDocument();
   });
 });

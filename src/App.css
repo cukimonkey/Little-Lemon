@@ -2,8 +2,6 @@
 
 .App {
   text-align: center;
-  margin-left: 250px;
-  margin-right: 250px;
 }
 
 .navbar {
@@ -12,6 +10,8 @@
   padding: 0.5rem;
   grid-template-columns: min-content auto;
   grid-template-areas: 'navLogo navElements"';
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 .navElements {
@@ -27,8 +27,38 @@
   font-family: 'Karla', sans-serif;
   font-size: 20px;
   font-weight: bold;
-  text-align: center
+  text-align: end;
 ;
+}
+
+.main {
+  height: auto;
+}
+.intro {
+  background-color: #495E57;
+  margin:0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  grid-template-areas: "highlights mainPicture";
+}
+
+.intro .highlights {
+  padding-left: 250px;
+  width: 300px;
+}
+
+.intro .mainPicture {
+  padding-right: 250px;
+  width: 375px;
+  height: 444px;
+  margin-bottom: 50px;
+}
+/* Specials styling element*/
+
+.specials {
+  display: grid;
+
 }
 
 
