@@ -1,18 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
 .App {
   text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
-.navelement {
+.navbar {
+  display: grid;
+  gap: o.5rem;
+  padding: 0.5rem;
+  grid-template-columns: min-content auto;
+  grid-template-areas: 'navLogo navElements"';
+}
+
+.navElements {
   display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 16px;
+  gap: 18px;
 }
 
-.navelement img {
-  height: 40px;
+.navElements a {
+  text-decoration: none;
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center
+;
 }
+
 
 .footerelement ul.footerlist {
   list-style-type: none;
