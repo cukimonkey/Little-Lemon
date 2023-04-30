@@ -1,18 +1,19 @@
+import {Flex, Box } from "@chakra-ui/react";
 import React from "react";
 
 function Footer(){
 return (
-    <footer className='footer'
-    style={{
+    <footer className='footer'>
+    
+      <Flex style={{
         display: "flex",
         justifyContent: "space-between",
-        alignItems: "center",
         width: "100%"
     }}>
-      <div className="footerelement">
-            <img className="footerlogo" height='100px' src={process.env.PUBLIC_URL + "/Footer logo.png"} alt="logo"/>
-      </div>
-      <div className="footerelement">
+      <Box className="footerelement">
+            <img className="footerlogo" src={process.env.PUBLIC_URL + "/Footer logo.png"} height="150px" alt="logo"/>
+      </Box>
+      <Box className="footerelement">
         <ul className="footerlist">
             <li>Home</li>
             <li>About</li>
@@ -21,21 +22,22 @@ return (
             <li>Order Online</li>
             <li>Login</li>
         </ul>
-        </div>
-      <div className="footerelement">
+        </Box>
+      <Box className="footerelement">
         <ul className="footerlist">
             <li>Address</li>
             <li>Phone number</li>
             <li>Email</li>
         </ul>
-      </div>
-      <div className="footerelement">
+      </Box>
+      <Box className="footerelement">
       <ul className="footerlist">
             <li>Facebook</li>
             <li>Instagram</li>
             <li>Twitter</li>
         </ul>
-        </div>
+        </Box>
+    </Flex>
     </footer>
 );
 }

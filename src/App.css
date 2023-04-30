@@ -193,10 +193,22 @@ padding-bottom: 200px;
   z-index: 1;
  }
 /* Footer */
+
+.footer {
+  background-color: #EDEFEE;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
 .footerelement ul.footerlist {
   list-style-type: none;
   padding: 0;
 }
 
+footerlogo {
+  height: 100px;
+}
 
 
